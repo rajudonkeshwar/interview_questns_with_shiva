@@ -1,1 +1,21 @@
+What is terraform, why should we use it? 
+Ans: Terraform is a infrastructure as code tool, by using it we can create our own infrastructure through code in any cloud provider like aws, gcp
+     it has multiple advantages over manually created infra
+      consistent_infra: Often we face the problem of creating different infrastructure in different en, it vironment, by using terraform we create same infra
+                        in defferent environments, like dev, prod, test
+      Automated_infra_CRUD: By using terraform we can create entire infra in minutes, by reducing human errors, we can update and delete easily using terraform
+      InventoryOfResorces: If we create infra manually it is very difficult for us to maintain inventory of resources, 
+                           but if we create it using terraform it is very easy.
+      CostOptimization: If you need infra you can create in minutes, you can delete it also in munutes, so in this way we can do cost optimization
+      ModularInfra: We can create our own modules using terraform, we can use openSource modules also to reuse the infra code,
+                    instead of spending more time to create infraform scratch we can reuse modules
+      VersionControl: Since it is code we can maintain it in a git repositories for version control, we can completely maintain terraform infra history
 
+
+
+Ansible vs terraform when to use? what is the purpose?
+ANS: Ansible is popular configuration management tool, we can automate the configuration inside the server through ansible, 
+     but when it comes to creating of infra ansible is very poor, it may create duplicate resource, it is very hard to write
+     playbooks for updation and destruction of infra, so finally ansible is perfect choice to do configurations inside the servers, 
+     terraform is perfect choice to create infrastructure, we can intigrate terraform with ansible, once terraform creates servers
+     it can handover configuration management to ansible
